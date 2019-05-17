@@ -1,0 +1,374 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0xcddb00 .scope module, "encoder_tb" "encoder_tb" 2 22;
+ .timescale -9 -9;
+v0xcf0bd0_0 .var "d", 15 0;
+v0xcf0ca0_0 .var/i "i", 31 0;
+v0xcf0d20_0 .net "y", 3 0, v0xcf0b30_0; 1 drivers
+S_0xcddbf0 .scope module, "e" "encoder" 2 40, 2 6, S_0xcddb00;
+ .timescale -9 -9;
+v0xccb660_0 .net "d", 15 0, v0xcf0bd0_0; 1 drivers
+v0xcf0b30_0 .var "y", 3 0;
+E_0xcca220 .event edge, v0xccb660_0;
+    .scope S_0xcddbf0;
+T_0 ;
+    %wait E_0xcca220;
+    %ix/load 1, 8, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.0, 4;
+    %load/x1p 8, v0xccb660_0, 1;
+    %jmp T_0.1;
+T_0.0 ;
+    %mov 8, 2, 1;
+T_0.1 ;
+; Save base=8 wid=1 in lookaside.
+    %ix/load 1, 9, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.2, 4;
+    %load/x1p 9, v0xccb660_0, 1;
+    %jmp T_0.3;
+T_0.2 ;
+    %mov 9, 2, 1;
+T_0.3 ;
+; Save base=9 wid=1 in lookaside.
+    %or 8, 9, 1;
+    %ix/load 1, 10, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.4, 4;
+    %load/x1p 9, v0xccb660_0, 1;
+    %jmp T_0.5;
+T_0.4 ;
+    %mov 9, 2, 1;
+T_0.5 ;
+; Save base=9 wid=1 in lookaside.
+    %or 8, 9, 1;
+    %ix/load 1, 11, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.6, 4;
+    %load/x1p 9, v0xccb660_0, 1;
+    %jmp T_0.7;
+T_0.6 ;
+    %mov 9, 2, 1;
+T_0.7 ;
+; Save base=9 wid=1 in lookaside.
+    %or 8, 9, 1;
+    %ix/load 1, 12, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.8, 4;
+    %load/x1p 9, v0xccb660_0, 1;
+    %jmp T_0.9;
+T_0.8 ;
+    %mov 9, 2, 1;
+T_0.9 ;
+; Save base=9 wid=1 in lookaside.
+    %or 8, 9, 1;
+    %ix/load 1, 13, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.10, 4;
+    %load/x1p 9, v0xccb660_0, 1;
+    %jmp T_0.11;
+T_0.10 ;
+    %mov 9, 2, 1;
+T_0.11 ;
+; Save base=9 wid=1 in lookaside.
+    %or 8, 9, 1;
+    %ix/load 1, 14, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.12, 4;
+    %load/x1p 9, v0xccb660_0, 1;
+    %jmp T_0.13;
+T_0.12 ;
+    %mov 9, 2, 1;
+T_0.13 ;
+; Save base=9 wid=1 in lookaside.
+    %or 8, 9, 1;
+    %ix/load 1, 15, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.14, 4;
+    %load/x1p 9, v0xccb660_0, 1;
+    %jmp T_0.15;
+T_0.14 ;
+    %mov 9, 2, 1;
+T_0.15 ;
+; Save base=9 wid=1 in lookaside.
+    %or 8, 9, 1;
+    %ix/load 0, 3, 0;
+    %cassign/x0 v0xcf0b30_0, 8, 1;
+    %ix/load 1, 4, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.16, 4;
+    %load/x1p 9, v0xccb660_0, 1;
+    %jmp T_0.17;
+T_0.16 ;
+    %mov 9, 2, 1;
+T_0.17 ;
+; Save base=9 wid=1 in lookaside.
+    %ix/load 1, 5, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.18, 4;
+    %load/x1p 10, v0xccb660_0, 1;
+    %jmp T_0.19;
+T_0.18 ;
+    %mov 10, 2, 1;
+T_0.19 ;
+; Save base=10 wid=1 in lookaside.
+    %or 9, 10, 1;
+    %ix/load 1, 6, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.20, 4;
+    %load/x1p 10, v0xccb660_0, 1;
+    %jmp T_0.21;
+T_0.20 ;
+    %mov 10, 2, 1;
+T_0.21 ;
+; Save base=10 wid=1 in lookaside.
+    %or 9, 10, 1;
+    %ix/load 1, 7, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.22, 4;
+    %load/x1p 10, v0xccb660_0, 1;
+    %jmp T_0.23;
+T_0.22 ;
+    %mov 10, 2, 1;
+T_0.23 ;
+; Save base=10 wid=1 in lookaside.
+    %or 9, 10, 1;
+    %ix/load 1, 12, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.24, 4;
+    %load/x1p 10, v0xccb660_0, 1;
+    %jmp T_0.25;
+T_0.24 ;
+    %mov 10, 2, 1;
+T_0.25 ;
+; Save base=10 wid=1 in lookaside.
+    %or 9, 10, 1;
+    %ix/load 1, 13, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.26, 4;
+    %load/x1p 10, v0xccb660_0, 1;
+    %jmp T_0.27;
+T_0.26 ;
+    %mov 10, 2, 1;
+T_0.27 ;
+; Save base=10 wid=1 in lookaside.
+    %or 9, 10, 1;
+    %ix/load 1, 14, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.28, 4;
+    %load/x1p 10, v0xccb660_0, 1;
+    %jmp T_0.29;
+T_0.28 ;
+    %mov 10, 2, 1;
+T_0.29 ;
+; Save base=10 wid=1 in lookaside.
+    %or 9, 10, 1;
+    %ix/load 1, 15, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.30, 4;
+    %load/x1p 10, v0xccb660_0, 1;
+    %jmp T_0.31;
+T_0.30 ;
+    %mov 10, 2, 1;
+T_0.31 ;
+; Save base=10 wid=1 in lookaside.
+    %or 9, 10, 1;
+    %ix/load 0, 2, 0;
+    %cassign/x0 v0xcf0b30_0, 9, 1;
+    %ix/load 1, 2, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.32, 4;
+    %load/x1p 10, v0xccb660_0, 1;
+    %jmp T_0.33;
+T_0.32 ;
+    %mov 10, 2, 1;
+T_0.33 ;
+; Save base=10 wid=1 in lookaside.
+    %ix/load 1, 3, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.34, 4;
+    %load/x1p 11, v0xccb660_0, 1;
+    %jmp T_0.35;
+T_0.34 ;
+    %mov 11, 2, 1;
+T_0.35 ;
+; Save base=11 wid=1 in lookaside.
+    %or 10, 11, 1;
+    %ix/load 1, 6, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.36, 4;
+    %load/x1p 11, v0xccb660_0, 1;
+    %jmp T_0.37;
+T_0.36 ;
+    %mov 11, 2, 1;
+T_0.37 ;
+; Save base=11 wid=1 in lookaside.
+    %or 10, 11, 1;
+    %ix/load 1, 7, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.38, 4;
+    %load/x1p 11, v0xccb660_0, 1;
+    %jmp T_0.39;
+T_0.38 ;
+    %mov 11, 2, 1;
+T_0.39 ;
+; Save base=11 wid=1 in lookaside.
+    %or 10, 11, 1;
+    %ix/load 1, 10, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.40, 4;
+    %load/x1p 11, v0xccb660_0, 1;
+    %jmp T_0.41;
+T_0.40 ;
+    %mov 11, 2, 1;
+T_0.41 ;
+; Save base=11 wid=1 in lookaside.
+    %or 10, 11, 1;
+    %ix/load 1, 11, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.42, 4;
+    %load/x1p 11, v0xccb660_0, 1;
+    %jmp T_0.43;
+T_0.42 ;
+    %mov 11, 2, 1;
+T_0.43 ;
+; Save base=11 wid=1 in lookaside.
+    %or 10, 11, 1;
+    %ix/load 1, 14, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.44, 4;
+    %load/x1p 11, v0xccb660_0, 1;
+    %jmp T_0.45;
+T_0.44 ;
+    %mov 11, 2, 1;
+T_0.45 ;
+; Save base=11 wid=1 in lookaside.
+    %or 10, 11, 1;
+    %ix/load 1, 15, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.46, 4;
+    %load/x1p 11, v0xccb660_0, 1;
+    %jmp T_0.47;
+T_0.46 ;
+    %mov 11, 2, 1;
+T_0.47 ;
+; Save base=11 wid=1 in lookaside.
+    %or 10, 11, 1;
+    %ix/load 0, 1, 0;
+    %cassign/x0 v0xcf0b30_0, 10, 1;
+    %ix/load 1, 1, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.48, 4;
+    %load/x1p 11, v0xccb660_0, 1;
+    %jmp T_0.49;
+T_0.48 ;
+    %mov 11, 2, 1;
+T_0.49 ;
+; Save base=11 wid=1 in lookaside.
+    %ix/load 1, 3, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.50, 4;
+    %load/x1p 12, v0xccb660_0, 1;
+    %jmp T_0.51;
+T_0.50 ;
+    %mov 12, 2, 1;
+T_0.51 ;
+; Save base=12 wid=1 in lookaside.
+    %or 11, 12, 1;
+    %ix/load 1, 5, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.52, 4;
+    %load/x1p 12, v0xccb660_0, 1;
+    %jmp T_0.53;
+T_0.52 ;
+    %mov 12, 2, 1;
+T_0.53 ;
+; Save base=12 wid=1 in lookaside.
+    %or 11, 12, 1;
+    %ix/load 1, 7, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.54, 4;
+    %load/x1p 12, v0xccb660_0, 1;
+    %jmp T_0.55;
+T_0.54 ;
+    %mov 12, 2, 1;
+T_0.55 ;
+; Save base=12 wid=1 in lookaside.
+    %or 11, 12, 1;
+    %ix/load 1, 9, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.56, 4;
+    %load/x1p 12, v0xccb660_0, 1;
+    %jmp T_0.57;
+T_0.56 ;
+    %mov 12, 2, 1;
+T_0.57 ;
+; Save base=12 wid=1 in lookaside.
+    %or 11, 12, 1;
+    %ix/load 1, 11, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.58, 4;
+    %load/x1p 12, v0xccb660_0, 1;
+    %jmp T_0.59;
+T_0.58 ;
+    %mov 12, 2, 1;
+T_0.59 ;
+; Save base=12 wid=1 in lookaside.
+    %or 11, 12, 1;
+    %ix/load 1, 13, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.60, 4;
+    %load/x1p 12, v0xccb660_0, 1;
+    %jmp T_0.61;
+T_0.60 ;
+    %mov 12, 2, 1;
+T_0.61 ;
+; Save base=12 wid=1 in lookaside.
+    %or 11, 12, 1;
+    %ix/load 1, 15, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_0.62, 4;
+    %load/x1p 12, v0xccb660_0, 1;
+    %jmp T_0.63;
+T_0.62 ;
+    %mov 12, 2, 1;
+T_0.63 ;
+; Save base=12 wid=1 in lookaside.
+    %or 11, 12, 1;
+    %ix/load 0, 0, 0;
+    %cassign/x0 v0xcf0b30_0, 11, 1;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0xcddb00;
+T_1 ;
+    %vpi_call 2 27 "$dumpfile", "q2_encoder.vcd";
+    %vpi_call 2 28 "$dumpvars", 1'sb0, S_0xcddb00;
+    %set/v v0xcf0ca0_0, 0, 32;
+T_1.0 ;
+    %load/v 12, v0xcf0ca0_0, 32;
+   %cmpi/s 12, 15, 32;
+    %jmp/0xz T_1.1, 5;
+    %set/v v0xcf0bd0_0, 0, 16;
+    %ix/getv/s 0, v0xcf0ca0_0;
+    %jmp/1 t_0, 4;
+    %set/x0 v0xcf0bd0_0, 1, 1;
+t_0 ;
+    %delay 10, 0;
+    %ix/load 0, 1, 0;
+    %load/vp0/s 12, v0xcf0ca0_0, 32;
+    %set/v v0xcf0ca0_0, 12, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %delay 150, 0;
+    %vpi_call 2 37 "$finish";
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "q2_encoder.v";

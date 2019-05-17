@@ -1,0 +1,5 @@
+Single bit Sequential Memory Element
+
+- The implementation done here is gate level modelling for a D-FlipFlop.
+-separate files for each part of the question
+

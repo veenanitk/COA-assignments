@@ -1,0 +1,76 @@
+$date
+	Mon Oct 15 23:34:45 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module decoder_tb $end
+$var wire 16 ! y [15:0] $end
+$var reg 4 " a [3:0] $end
+$scope module d $end
+$var wire 4 # a [3:0] $end
+$var reg 16 $ y [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 $
+b0 #
+b0 "
+b1 !
+$end
+#10
+b10 $
+b10 !
+b1000 "
+b1000 #
+#20
+b1 $
+b1 !
+b0 "
+b0 #
+#30
+b100 $
+b100 !
+b100 "
+b100 #
+#40
+b1000 !
+b1000 $
+b1100 "
+b1100 #
+#50
+b10 !
+b10 $
+b1000 "
+b1000 #
+#60
+b1 $
+b1 !
+b0 "
+b0 #
+#70
+b10000 $
+b10000 !
+b10 "
+b10 #
+#80
+b100000 !
+b100000 $
+b1010 "
+b1010 #
+#90
+b10000000 !
+b10000000 $
+b1110 "
+b1110 #
+#100
+b1000000000000000 !
+b1000000000000000 $
+b1111 "
+b1111 #
+#110

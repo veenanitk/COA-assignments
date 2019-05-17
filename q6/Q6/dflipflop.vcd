@@ -1,0 +1,179 @@
+$date
+	Mon Oct 15 10:41:23 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module test $end
+$var wire 1 ! Q $end
+$var wire 1 " Qn $end
+$var reg 1 # C $end
+$var reg 1 $ D $end
+$scope module out $end
+$var wire 1 # C $end
+$var wire 1 % Cn $end
+$var wire 1 $ D $end
+$var wire 1 ! Q $end
+$var wire 1 " Qn $end
+$var wire 1 & DQn $end
+$var wire 1 ' DQ $end
+$scope module dl $end
+$var wire 1 $ D $end
+$var wire 1 ( D1 $end
+$var wire 1 ) Dn $end
+$var wire 1 * Dn1 $end
+$var wire 1 % G $end
+$var wire 1 ' Q $end
+$var wire 1 & Qn $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1*
+1)
+0(
+0'
+1&
+1%
+0$
+0#
+z"
+z!
+$end
+#1000
+0*
+0%
+1#
+#2000
+1*
+1%
+0#
+#3000
+0*
+0%
+1#
+#4000
+1*
+1%
+0#
+#5000
+0*
+0%
+1#
+#6000
+1*
+1%
+0#
+#7000
+0*
+0%
+1#
+#8000
+1'
+0&
+1(
+1%
+0)
+0#
+1$
+#9000
+0(
+0%
+1#
+#10000
+1(
+1%
+0#
+#11000
+0(
+0%
+1#
+#12000
+1(
+1%
+0#
+#13000
+0(
+0%
+1#
+#14000
+1(
+1%
+0#
+#15000
+0(
+0%
+1#
+#16000
+1&
+0'
+1*
+1%
+1)
+0#
+0$
+#17000
+0*
+0%
+1#
+#18000
+1*
+1%
+0#
+#19000
+0*
+0%
+1#
+#20000
+1*
+1%
+0#
+#21000
+0*
+0%
+1#
+#22000
+1*
+1%
+0#
+#23000
+0*
+0%
+1#
+#24000
+1'
+0&
+1(
+1%
+0)
+0#
+1$
+#25000
+0(
+0%
+1#
+#26000
+1(
+1%
+0#
+#27000
+0(
+0%
+1#
+#28000
+1(
+1%
+0#
+#29000
+0(
+0%
+1#
+#30000
+1(
+1%
+0#

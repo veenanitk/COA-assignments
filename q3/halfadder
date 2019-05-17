@@ -1,0 +1,40 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x1386ff0 .scope module, "halfadder_tb" "halfadder_tb" 2 2;
+ .timescale 0 0;
+v0x13bb510_0 .var "a", 0 0;
+v0x13bb5e0_0 .var "b", 0 0;
+v0x13bb690_0 .net "carry", 0 0, L_0x13bb970; 1 drivers
+v0x13bb740_0 .net "sum", 0 0, L_0x13bb820; 1 drivers
+S_0x13a9f20 .scope module, "d" "halfadder" 2 9, 3 1, S_0x1386ff0;
+ .timescale 0 0;
+L_0x13bb820 .functor XOR 1, v0x13bb510_0, v0x13bb5e0_0, C4<0>, C4<0>;
+L_0x13bb970 .functor AND 1, v0x13bb510_0, v0x13bb5e0_0, C4<1>, C4<1>;
+v0x1387410_0 .net "a", 0 0, v0x13bb510_0; 1 drivers
+v0x13bb320_0 .net "b", 0 0, v0x13bb5e0_0; 1 drivers
+v0x13bb3c0_0 .alias "carry", 0 0, v0x13bb690_0;
+v0x13bb460_0 .alias "sum", 0 0, v0x13bb740_0;
+    .scope S_0x1386ff0;
+T_0 ;
+    %vpi_call 2 17 "$dumpfile", "halfadder.vcd";
+    %vpi_call 2 18 "$dumpvars", 1'sb0, S_0x1386ff0;
+    %vpi_call 2 19 "$monitor", "sum=%b , carry=%b", v0x13bb740_0, v0x13bb690_0;
+    %set/v v0x13bb510_0, 0, 1;
+    %set/v v0x13bb5e0_0, 1, 1;
+    %delay 10, 0;
+    %set/v v0x13bb510_0, 1, 1;
+    %set/v v0x13bb5e0_0, 1, 1;
+    %delay 10, 0;
+    %vpi_call 2 25 "$finish";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "halfadder_tb.v";
+    "./halfadder.v";
